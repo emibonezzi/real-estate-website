@@ -1,0 +1,54 @@
+* {
+    outline: 1px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav li {
+    list-style: none;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    height: 600px;
+}
+
+#hero div:first-of-type {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#hero div:last-of-type {
+    width: 400px;
+}
+
+#hero:nth-last-child(1) h1 {
+    font-size: 64px;
+}
